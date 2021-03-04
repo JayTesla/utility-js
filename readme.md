@@ -41,7 +41,7 @@ _________________________________
     - e.g `map([], cube)` should give `[]`
     - e.g `map([1,2,3], identity)` should give `[1,2,3]`
     - e.g.`map([1,2,3], cube)` should give `[1,8,27]`
-    - e.g. `map([a{x : 10}],someObject => someObject.x + 1)`  -> `[11]`
+    - e.g. `map([{x : 10}],someObject => someObject.x + 1)`  -> `[11]`
         - where  `identity` and `cube` are functions
 - filter
     - e.g `filter([], x => true)` should give `[]`
@@ -51,7 +51,7 @@ _________________________________
     - e.g. `filter(['a','B','c','D'], filterUpperCase)` should be `[B,D]`
 - reduce
     - e.g. `reduce([],(x,y)=>x+y)` should be undefined
-    - e.g. `reduce([],v(x,y)=>x+y,10)` should be 10
+    - e.g. `reduce([],(x,y)=>x+y,10)` should be 10
     - e.g. `reduce(['a','b','c'],(x,y)=>x+y)` should be `abc`
     - e.g. `reduce(['a','b','c'],(x,y)=>x+y,’z’),` should be `zabc`
 - max
